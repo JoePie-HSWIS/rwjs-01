@@ -22,7 +22,7 @@ yarn install
 yarn redwood dev
 ```
 
-**Sources**:
+**Thanks to**:
 - [Making RedwoodJS Easier with VSCode Dev Containers](https://dev.to/talk2megooseman/making-redwoodjs-easier-with-vscode-dev-containers-4j4)
 - [Redwood Starter](https://github.com/redwoodjs/redwood-starter)
 
