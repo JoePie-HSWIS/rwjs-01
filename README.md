@@ -1,9 +1,26 @@
 # README
 
-This template repository serves as playground to work through the RedwoodJS tutorial (v.7.4).
+This template repository serves as playground to work through the **[RedwoodJS tutorial (v.7.4)](https://redwoodjs.com/docs/tutorial/foreword)**.
 It has be configured to run on a `devcontainer`–locally on [Docker](https://www.docker.com/products/docker-desktop/)/[Podman](https://podman.io/) + [VS Code](https://code.visualstudio.com/) with the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed or on a [GitHub CodeSpace](https://github.com/features/codespaces).)
 
 This configuration runs a Postgres database container for development and test environments instead of the default sqlite database.
+
+**Chapter 1 Prerequisites** and **Chapter 1 Installation** are already done.
+Just clone the repository, paste the following to your `.env` file to pick up the devcontainer's database configuration:
+
+```
+DATABASE_URL=postgres://postgres:postgres@localhost:5432/development_db
+TEST_DATABASE_URL=postgres://postgres:postgres@localhost:5432/test_db
+
+RWJS_DEV_API_URL=http://localhost
+```
+
+and start with:
+
+```shell
+yarn install
+yarn redwood dev
+```
 
 **Sources**:
 - [Making RedwoodJS Easier with VSCode Dev Containers](https://dev.to/talk2megooseman/making-redwoodjs-easier-with-vscode-dev-containers-4j4)
