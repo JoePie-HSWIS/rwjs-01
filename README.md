@@ -1,6 +1,16 @@
 # README
 
-Welcome to [RedwoodJS](https://redwoodjs.com)!
+This template repository serves as playground to work through the RedwoodJS tutorial (v.7.4).
+It has be configured to run on a `devcontainer`–locally on [Docker](https://www.docker.com/products/docker-desktop/)/[Podman](https://podman.io/) + [VS Code](https://code.visualstudio.com/) with the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed or on a [GitHub CodeSpace](https://github.com/features/codespaces).)
+
+This configuration runs a Postgres database container for development and test environments instead of the default sqlite database.
+
+**Sources**:
+- [Making RedwoodJS Easier with VSCode Dev Containers](https://dev.to/talk2megooseman/making-redwoodjs-easier-with-vscode-dev-containers-4j4)
+- [Redwood Starter](https://github.com/redwoodjs/redwood-starter)
+
+---
+### Welcome to [RedwoodJS](https://redwoodjs.com)!
 
 > **Prerequisites**
 >
