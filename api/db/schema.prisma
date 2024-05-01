@@ -5,7 +5,8 @@
 // https://www.prisma.io/docs/orm/prisma-migrate
 
 datasource db {
-  provider = "sqlite"
+  //provider = "sqlite"
+  provider = "postgresql" // Switched from MySQL to Postgres for local development
   url      = env("DATABASE_URL")
 }
 
