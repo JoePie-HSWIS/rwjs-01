@@ -10,3 +10,9 @@ FROM mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm
 
 # [Optional] Uncomment if you want to install more global node modules
 # RUN su node -c "npm install -g <your-package-list-here>"
+
+# enable Corepack (https://nodejs.org/docs/latest-v18.x/api/corepack.html)
+# Corepack will know to use a modern version of Yarn because of the
+# packageManager field in the root package.json
+# solves issue: https://community.redwoodjs.com/t/blog-tutorial-auth-setup-and-storybook-yarn-workspace-errors/5860/2
+RUN corepack enable
